@@ -1,0 +1,48 @@
+#title{
+    text-align: center;
+    background-color: lightblue;
+    padding: 0;
+    padding-top: 3em;
+    height: 10em;
+}
+
+#bumper1A, #bumper1B{
+    background-color: lightblue;
+    height: 10em;
+}
+
+
+#timer{
+    padding: 0;
+    background-color: lightslategray;
+    height: 5em;
+    text-align: center;
+    padding-top: 1.5em;
+    font-size: 2em;
+}
+
+#question1{
+    padding: 1em;
+    padding-left: 6em;
+}
+
+#question2{
+    padding: 1em;
+    padding-left: 6em;
+}
+
+#question3{
+    padding: 1em;
+    padding-left: 6em;
+}
+
+#question4{
+    padding: 1em;
+    padding-left: 6em;
+}
+
+
+#test{
+    text-align: center;
+}
+

@@ -2,9 +2,9 @@
 
 var questionnaire = document.getElementById("questionnaire");
 
-var questions = ["what is a dog", "what is not a dog", "is a dog?", "can a dog be for what to another as I am for like?"];
-var answers = ["yes", "Nic Cage", "yeah", "what?"];
-var wrongAnswers = ["wrong11", "wrong12", "wrong13", "wrong21", "wrong22", "wrong23", "wrong31", "wrong32", "wrong33"];
+
+
+
 
 
 function timeOut(){
@@ -13,8 +13,9 @@ function timeOut(){
 
 
 
-var timeLeft = 2;
+var timeLeft = 5;
 var elem = document.getElementById('timer');
+var example = null;
 
 var timerId;
 
@@ -25,6 +26,15 @@ function startTimer(){
 function countdown(){
   if (timeLeft == 0) {
     clearTimeout(timerId);
+    //true or false
+    // 1 or 0
+
+    var count = 0;
+    count += getRadioGroupValue("question1Options");
+    count += getRadioGroupValue("question2Options");
+    count += getRadioGroupValue("question3Options");
+    count += getRadioGroupValue("question4Options");
+    console.log(count);
     timeOut();
   } else {
     timeLeft--;
@@ -32,8 +42,16 @@ function countdown(){
   }
 }
 
-$("#btn").click(startTimer);
+function getRadioGroupValue(nameAtt){
+  var value = $("input[name='" + nameAtt + "']:checked").val();
+  if(value == "true"){
+    return 1;
+  } else {
+    return 0;
+  }
+}
 
+$("#btn").click(startTimer);
 
 
 

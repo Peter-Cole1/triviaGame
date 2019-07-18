@@ -46,3 +46,12 @@
     text-align: center;
 }
 
+#btn{
+    height: 10em;
+    width: 10em;
+    border-radius: 5em;
+    margin-top: 3em; 
+    animation-name: example;
+    animation-duration: 2s;
+}
+

@@ -13,7 +13,7 @@ function timeOut(){
 
 
 
-var timeLeft = 5;
+var timeLeft = 30;
 var elem = document.getElementById('timer');
 var example = null;
 
@@ -21,6 +21,10 @@ var timerId;
 
 function startTimer(){
   timerId = setInterval(countdown, 1000);
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
 }
 
 function countdown(){

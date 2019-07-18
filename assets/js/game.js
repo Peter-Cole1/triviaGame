@@ -8,12 +8,13 @@ var questionnaire = document.getElementById("questionnaire");
 
 
 function timeOut(){
-    alert("Out of time!")
+    alert("Out of time!");
+  
 }
 
 
 
-var timeLeft = 30;
+var timeLeft = 31;
 var elem = document.getElementById('timer');
 var example = null;
 
@@ -21,10 +22,6 @@ var timerId;
 
 function startTimer(){
   timerId = setInterval(countdown, 1000);
-  @keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
-  }
 }
 
 function countdown(){
@@ -40,6 +37,7 @@ function countdown(){
     count += getRadioGroupValue("question4Options");
     console.log(count);
     timeOut();
+    alert("You got "+count+" questions correct!");
   } else {
     timeLeft--;
     elem.innerHTML = timeLeft + ' seconds remaining';

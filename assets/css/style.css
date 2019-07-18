@@ -1,24 +1,26 @@
 #title{
     text-align: center;
-    background-color: lightblue;
+    background-color: lightgreen;
     padding: 0;
     padding-top: 3em;
     height: 10em;
+    font-family: 'Fascinate', cursive;
 }
 
 #bumper1A, #bumper1B{
-    background-color: lightblue;
+    background-color: lightgreen;
     height: 10em;
 }
 
 
 #timer{
     padding: 0;
-    background-color: lightslategray;
+    background-color: #af733a;
     height: 5em;
     text-align: center;
     padding-top: 1.5em;
     font-size: 2em;
+    font-family: 'Fascinate', cursive;
 }
 
 #question1{
@@ -51,7 +53,5 @@
     width: 10em;
     border-radius: 5em;
     margin-top: 3em; 
-    animation-name: example;
-    animation-duration: 2s;
 }
 
